@@ -1,0 +1,8 @@
+所有的解码操作decode都是从其它编码格式解码成unicode
+s = '你好'
+s_to_unicode = s.decode('utf-8')#括号中的utf-8是要解码的字符编码格式
+s_to_gbk = s_to_unicode.encode('gbk')字符解码成unicode后再encode成目标编码格式
+注意在python中
+print(s.encode('gbk')) python默认编码格式为unicode,所以这里不用再解码,而是直接编码成目标编码格式
+
+
